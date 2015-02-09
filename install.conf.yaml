@@ -1,3 +1,7 @@
 - clean: []
-- link: {}
+
+- link: 
+    "~/.tmux.conf":     "tmux.conf"
+    "~/.compton.conf":  "compton.conf"
+
 - shell: []

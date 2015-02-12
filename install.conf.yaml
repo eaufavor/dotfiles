@@ -3,5 +3,6 @@
 - link: 
     "~/.tmux.conf":     "tmux.conf"
     "~/.compton.conf":  "compton.conf"
+    "~/.zshrc":  "zshrc"
 
 - shell: []

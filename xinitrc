@@ -7,6 +7,7 @@ export GTK_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
 
+export DESKTOP_SESSION=gnome
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel' 
 
 if [ -d /etc/X11/xinit/xinitrc.d ]; then

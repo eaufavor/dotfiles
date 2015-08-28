@@ -84,5 +84,6 @@ setopt HIST_IGNORE_SPACE
 setopt hist_ignore_all_dups
 setopt HIST_IGNORE_DUPS
 alias vi=vim
-alias ya=yaourt
+#alias ya=yaourt
+alias ya='PAGER="less -R" yaourt --pager --color'
 alias go='google -n 3 -C'

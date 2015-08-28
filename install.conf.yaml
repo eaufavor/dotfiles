@@ -3,7 +3,8 @@
 - link: 
     "~/.tmux.conf":     "tmux.conf"
     "~/.compton.conf":  "compton.conf"
-    "~/.zshrc":  "zshrc"
     "~/.xinitrc":  "xinitrc"
+    "~/.vimrc":  "vimrc"
+    "~/.zprezto/runcoms": "zprezto/runcoms"
 
 - shell: []

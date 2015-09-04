@@ -22,3 +22,5 @@ alias go='google -n 3 -C'
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 zstyle ':completion:*' preserve-prefix '/afs/[^/]##/' # no excess stat'ing /afs
 zstyle ':completion:*' accept-exact-dirs true # avoid excess stat'ing /afs
+# Use - for the dir on the top
+setopt pushdminus

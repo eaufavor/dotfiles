@@ -5,6 +5,7 @@
     "~/.compton.conf":  "compton.conf"
     "~/.xinitrc":  "xinitrc"
     "~/.vimrc":  "vimrc"
+    "~/.pylintrc":  "pylintrc"
     "~/.zprezto/runcoms": "zprezto/runcoms"
 
 - shell: []

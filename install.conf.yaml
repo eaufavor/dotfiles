@@ -9,4 +9,4 @@
     "~/.zprezto/runcoms": "zprezto/runcoms"
     "~/.gitignore_global":  "gitignore_global"
 
-- shell: []
+- shell: [git config --global core.excludesfile ~/.gitignore_global]

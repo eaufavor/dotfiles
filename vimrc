@@ -47,6 +47,7 @@ inoremap <C-U> <C-G>u<C-U>
 if has('mouse')
   set mouse=v
 endif
+set mouse=v
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.

@@ -30,21 +30,20 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'spectrum' \
+  'ssh' \
   'utility' \
   'completion' \
   'prompt' \
   'history-substring-search' \
   'git' \
   'syntax-highlighting' \
-  'tmux' \
-  'ssh'
-
+  'tmux'
 #
 # Editor
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' key-bindings 'vi'
+zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Auto convert .... to ../..
 # zstyle ':prezto:module:editor' dot-expansion 'yes'
@@ -114,6 +113,7 @@ zstyle ':prezto:module:prompt' theme 'agnoster'
 
 # Set the SSH identities to load into the agent.
 # zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh:load' identities 'id_rsa'
 
 #
 # Syntax Highlighting

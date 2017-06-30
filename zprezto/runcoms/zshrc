@@ -14,11 +14,11 @@ fi
 
 export KEYTIMEOUT=1
 
-export PATH=$(cope_path):$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl
+#export PATH=$(cope_path):$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl
+export PATH=$GOPATH/bin:/usr/lib/ccache:/home/yuchen/nfs/nginx-cache/lua/nginx/objs:$PATH
 alias ga='git add'
 alias cd..="cd .."
 alias ya='PAGER="less -R" yaourt --pager --color'
-alias go='google -n 3 -C'
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 zstyle ':completion:*' preserve-prefix '/afs/[^/]##/' # no excess stat'ing /afs
 zstyle ':completion:*' accept-exact-dirs true # avoid excess stat'ing /afs

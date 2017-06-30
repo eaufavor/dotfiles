@@ -21,6 +21,10 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" json show quotes
+autocmd Filetype json set conceallevel=0
+
+
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
 else
@@ -115,13 +119,14 @@ nmap <F8> :TagbarToggle<CR>
 nmap <F9> :FufBufferTag<CR>
 let g:tagbar_usearrows = 1
 colorscheme jellybeans
-set tabstop=4 softtabstop=4 shiftwidth=4
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 execute pathogen#infect()
 set laststatus=2
 set noshowmode
 set nu
-let g:gitgutter_realtime = 0
-let g:gitgutter_eager = 0
+let g:gitgutter_realtime = 1
+let g:gitgutter_eager = 1
+let g:gitgutter_async = 0
 "highlight SignColumn ctermbg=9
 let g:syntastic_cpp_checkers = ['cppcheck']
 let g:syntastic_python_checkers = ['pylint']
@@ -130,9 +135,34 @@ let g:indentLine_color_term = 239
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
-if $TERM =~ '^screen-256color'
-    map <Esc>OH <Home>
-    map! <Esc>OH <Home>
-    map <Esc>OF <End>
-    map! <Esc>OF <End>
+" Home key
+imap <esc>OH <esc>0i
+cmap <esc>OH <home>
+nmap <esc>OH 0
+" End key
+nmap <esc>OF $
+imap <esc>OF <esc>$a
+cmap <esc>OF <end>
+
+"if $TERM =~ '^screen-256color'
+"    map <Esc>OH <Home>
+"    map! <Esc>OH <Home>
+"    map <Esc>OF <End>
+"    map! <Esc>OF <End>
+"endif
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
+if exists('+colorcolumn')
+	set colorcolumn=80
+else
+	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
+
+autocmd FileType lua set ts=3 sw=3 et
+
+hi IndentGuidesOdd  ctermbg=black
+hi IndentGuidesEven ctermbg=darkgrey
+

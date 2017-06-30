@@ -1,3 +1,7 @@
 *.py[cod]
 *~
 .DS_Store
+tags
+*.deb
+local_conf.lua
+results.xml

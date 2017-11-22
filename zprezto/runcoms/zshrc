@@ -13,8 +13,9 @@ fi
 # Customize to your needs...
 
 export KEYTIMEOUT=1
-
-export PATH=$(cope_path):$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl
+source /usr/local/bin/virtualenvwrapper.sh
+#export PATH=$(cope_path):$PATH:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/core_perl
+export PATH="/Users/yuchen/anaconda2/bin:$PATH"
 alias ga='git add'
 alias cd..="cd .."
 alias ya='PAGER="less -R" yaourt --pager --color'
@@ -24,3 +25,6 @@ zstyle ':completion:*' preserve-prefix '/afs/[^/]##/' # no excess stat'ing /afs
 zstyle ':completion:*' accept-exact-dirs true # avoid excess stat'ing /afs
 # Use - for the dir on the top
 setopt pushdminus
+export TERM=xterm-256color
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line

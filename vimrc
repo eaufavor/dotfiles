@@ -56,6 +56,8 @@ if &t_Co > 2 || has("gui_running")
   set hlsearch
 endif
 
+syntax on
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
@@ -136,3 +138,7 @@ if $TERM =~ '^screen-256color'
     map <Esc>OF <End>
     map! <Esc>OF <End>
 endif
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup

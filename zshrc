@@ -80,6 +80,8 @@ source /home/eaufavor/.oh-my-zsh/custom/plugins/zsh-autosuggestions/autosuggesti
 #zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
 setopt HIST_IGNORE_SPACE
 setopt hist_ignore_all_dups
 setopt HIST_IGNORE_DUPS

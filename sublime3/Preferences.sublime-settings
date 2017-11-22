@@ -1,0 +1,49 @@
+{
+	"added_words":
+	[
+		"nginx",
+		"maxage",
+		"init",
+		"https",
+		"html",
+		"ietf",
+		"org",
+		"revalidate",
+		"util",
+		"Cloudflare",
+		"lua",
+		"cacheable",
+		"luacheck"
+	],
+	"always_show_minimap_viewport": true,
+	"atomic_save": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/monokai_fresh (SL).tmTheme",
+	"draw_white_space": "all",
+	"font_face": "Pragmatapro",
+	"font_options":
+	[
+		"gray_antialias"
+	],
+	"font_size": 12,
+	"ignore_inodes": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		80
+	],
+	"spell_check": true,
+	"theme": "Material-Theme.sublime-theme",
+	"translate_tabs_to_spaces": true
+}

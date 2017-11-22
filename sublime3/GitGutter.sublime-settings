@@ -1,0 +1,19 @@
+// GitGutter Settings - User
+{
+    "enable": true,
+    "debounce_delay": 200,
+    "theme": "Bars.gitgutter-theme",
+    "show_markers_on_untracked_file": false,
+    "protected_regions": [
+      "lint-underline-illegal",
+      "lint-underline-violation",
+      "lint-underline-warning",
+      "lint-outlines-illegal",
+      "lint-outlines-violation",
+      "lint-outlines-warning",
+      "lint-annotations",
+      "bookmarks",
+      "lsp_error",
+      "lsp_warning",
+      "lsp_info"],
+}
